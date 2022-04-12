@@ -1,0 +1,215 @@
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "Gilroy-Bold";
+  // адрес шрифта и тип
+  src: url("fonts/Gilroy-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("fonts/Gilroy-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 943px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Gilroy-Medium";
+  position: relative;
+  &__item {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid #828282;
+    width: 940.6px;
+    height: 0px;
+    top: 87px;
+  }
+}
+.home {
+  color: #070707;
+}
+.content {
+  margin-top: 72px;
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    display: flex;
+    justify-content: space-around;
+    &__info {
+      margin-top: 94px;
+      font-family: "Gilroy-Medium";
+      font-size: 18px;
+      line-height: 22px;
+      color: #070707;
+    }
+    &__name {
+      font-family: "Gilroy-Bold";
+      font-size: 47.3392px;
+      line-height: 59px;
+      color: #070707;
+    }
+    &__lang {
+      font-family: "Gilroy-Bold";
+      font-size: 16px;
+      line-height: 20px;
+      color: #828282;
+      transform: rotate(-90deg);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.about {
+  background-color: #f6f6f6;
+  margin-top: 104px;
+  &__title {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    padding-top: 120px;
+    color: #070707;
+  }
+  &__subtitle {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+
+    &__span {
+      display: block;
+      margin-top: 55px;
+    }
+
+    &__span:last-child {
+      display: block;
+      margin-top: 55px;
+      padding-bottom: 107px;
+    }
+  }
+}
+.skills {
+  &__title {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+    margin-top: 91px;
+  }
+  &__subtitle {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #070707;
+    margin-top: 91px;
+  }
+  &__programs {
+    padding-bottom: 111px;
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.portfolio {
+  padding-top: 112px;
+  background-color: #f6f6f6;
+
+  &__title {
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #070707;
+  }
+  img {
+    padding-top: 47px;
+  }
+  &__link {
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    text-decoration-line: underline;
+    color: #070707;
+    padding-top: 45px;
+    padding-bottom: 99px;
+  }
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+}
+.footer-title {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  color: #070707;
+  padding-top: 117px;
+}
+.footer-subtitle {
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.send {
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.networks {
+  display: flex;
+  max-width: 342px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 79px;
+  &__subtitle {
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding-top: 45px;
+    padding-bottom: 43px;
+  }
+}
